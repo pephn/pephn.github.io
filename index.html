@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estudi de mercat de l'ERP Acumatica Cloud ERP: història, arquitectura, llicències, mòduls, competidors i ofertes de feina.">
+  <title>Acumatica Cloud ERP · Estudi de mercat d'un SGE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Navegació principal">
+  <ul>
+    <li><a href="#introduccio">Introducció</a></li>
+    <li><a href="#general">Informació general</a></li>
+    <li><a href="#llicencies">Llicències i preus</a></li>
+    <li><a href="#sgbd">SGBD</a></li>
+    <li><a href="#instalacio">Instal·lació</a></li>
+    <li><a href="#moduls">Mòduls</a></li>
+    <li><a href="#competidors">Competidors</a></li>
+    <li><a href="#feina">Ofertes de feina</a></li>
+    <li><a href="#avantatges">Avantatges</a></li>
+    <li><a href="#bibliografia">Bibliografia</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="assignatura">Sistemes de Gestió Empresarial · 2n DAM · RA1 · A1</div>
+  <h1>Acumatica Cloud ERP</h1>
+  <p class="sub">Estudi de mercat d'un Sistema de Gestió Empresarial: un ERP al núvol, amb usuaris il·limitats i basat en tecnologia Microsoft .NET.</p>
+  <div class="etiquetes">
+    <span class="etiqueta">Tipus: ERP (amb CRM integrat)</span>
+    <span class="etiqueta">C# / .NET</span>
+    <span class="etiqueta">SaaS · On-Premise</span>
+    <span class="etiqueta">Versió estable: 2026 R1</span>
+  </div>
+  <div class="autors">Autors: <strong>[Nom Alumne 1]</strong> i <strong>[Nom Alumne 2]</strong> · Curs 2026-2027</div>
+</header>
+
+<main>
+
+<!-- ===================== 1. INTRODUCCIÓ ===================== -->
+<section id="introduccio">
+  <h2><span class="num">1</span>Introducció</h2>
+
+  <h3>Què és un SGE?</h3>
+  <p>Un <strong>Sistema de Gestió Empresarial (SGE)</strong> és un conjunt d'aplicacions que centralitza i automatitza els processos d'una organització (comptabilitat, vendes, compres, magatzem, producció, recursos humans, relació amb clients...) en una única base de dades compartida. Així, tots els departaments treballen amb la mateixa informació en temps real, s'eviten duplicitats i es pot prendre decisions amb dades fiables.</p>
+
+  <div class="grid g3">
+    <div class="card"><h4>ERP</h4><p><em>Enterprise Resource Planning</em>. Gestiona els recursos i processos interns: finances, inventari, compres, producció, projectes.</p></div>
+    <div class="card"><h4>CRM</h4><p><em>Customer Relationship Management</em>. Gestiona la relació amb clients: oportunitats, campanyes, casos de suport.</p></div>
+    <div class="card"><h4>BI</h4><p><em>Business Intelligence</em>. Analitza les dades de l'empresa mitjançant informes, quadres de comandament i previsions.</p></div>
+  </div>
+
+  <h3>L'SGE escollit: Acumatica Cloud ERP</h3>
+  <p><strong>Acumatica</strong> és un ERP «nascut al núvol» (<em>cloud-native</em>) dirigit a petites i mitjanes empreses (pimes). Ofereix una suite integrada amb finances, distribució, fabricació, construcció, comerç minorista, serveis professionals, servei de camp i CRM, sobre una plataforma pròpia basada en tecnologia Microsoft (<code>C#</code>, <code>ASP.NET</code> i <code>SQL Server</code>).</p>
+  <p>Es correspon amb el tipus <strong>ERP</strong>, tot i que incorpora un mòdul de <strong>CRM</strong> natiu i eines de <strong>BI</strong> (consultes genèriques, quadres de comandament i informes), de manera que cobreix part de les tres categories.</p>
+
+  <div class="grid g4">
+    <div class="dada"><span class="valor">2008</span><span class="etq">Any de llançament</span></div>
+    <div class="dada"><span class="valor">10.000+</span><span class="etq">Clients al món</span></div>
+    <div class="dada"><span class="valor">∞</span><span class="etq">Usuaris il·limitats</span></div>
+    <div class="dada"><span class="valor">2 / any</span><span class="etq">Versions (R1 i R2)</span></div>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="Il·lustració d'un quadre de comandament d'un ERP">
+      <rect x="0" y="0" width="720" height="300" rx="14" fill="#f6f8fb" stroke="#d9e1ec"/>
+      <rect x="0" y="0" width="720" height="40" rx="14" fill="#0b3d91"/>
+      <rect x="0" y="26" width="720" height="14" fill="#0b3d91"/>
+      <circle cx="22" cy="20" r="6" fill="#ff6b6b"/><circle cx="42" cy="20" r="6" fill="#ffd166"/><circle cx="62" cy="20" r="6" fill="#06d6a0"/>
+      <text x="90" y="25" fill="#fff" font-family="Segoe UI,Arial" font-size="14">Quadre de comandament · vista il·lustrativa</text>
+      <!-- KPI -->
+      <g font-family="Segoe UI,Arial">
+        <rect x="20" y="60" width="160" height="70" rx="10" fill="#e8f0fe"/><text x="34" y="86" font-size="12" fill="#5f6b7a">Vendes del mes</text><text x="34" y="115" font-size="24" font-weight="700" fill="#0b3d91">128.400 €</text>
+        <rect x="195" y="60" width="160" height="70" rx="10" fill="#e6f4ea"/><text x="209" y="86" font-size="12" fill="#5f6b7a">Marge brut</text><text x="209" y="115" font-size="24" font-weight="700" fill="#1e8e3e">34 %</text>
+        <rect x="370" y="60" width="160" height="70" rx="10" fill="#fff4e0"/><text x="384" y="86" font-size="12" fill="#5f6b7a">Comandes obertes</text><text x="384" y="115" font-size="24" font-weight="700" fill="#f28c28">57</text>
+        <rect x="545" y="60" width="155" height="70" rx="10" fill="#e0f7f6"/><text x="559" y="86" font-size="12" fill="#5f6b7a">Factures pendents</text><text x="559" y="115" font-size="24" font-weight="700" fill="#00a3a1">19</text>
+      </g>
+      <!-- gràfic barres -->
+      <g font-family="Segoe UI,Arial" font-size="11" fill="#5f6b7a">
+        <text x="20" y="158" font-size="13" fill="#072a66" font-weight="700">Vendes per trimestre (dades fictícies)</text>
+        <line x1="30" y1="270" x2="400" y2="270" stroke="#9aa7b8"/>
+        <rect x="55" y="215" width="50" height="55" fill="#0b3d91"/><text x="65" y="287">T1</text>
+        <rect x="140" y="195" width="50" height="75" fill="#0b3d91"/><text x="150" y="287">T2</text>
+        <rect x="225" y="175" width="50" height="95" fill="#00a3a1"/><text x="235" y="287">T3</text>
+        <rect x="310" y="168" width="50" height="102" fill="#00a3a1"/><text x="320" y="287">T4</text>
+      </g>
+      <!-- línia -->
+      <g font-family="Segoe UI,Arial" font-size="13">
+        <text x="440" y="158" fill="#072a66" font-weight="700">Tendència de tresoreria</text>
+        <polyline points="440,250 500,235 560,240 620,205 690,185" fill="none" stroke="#f28c28" stroke-width="4"/>
+        <circle cx="440" cy="250" r="5" fill="#f28c28"/><circle cx="500" cy="235" r="5" fill="#f28c28"/><circle cx="560" cy="240" r="5" fill="#f28c28"/><circle cx="620" cy="205" r="5" fill="#f28c28"/><circle cx="690" cy="185" r="5" fill="#f28c28"/>
+      </g>
+    </svg>
+    <figcaption>Il·lustració pròpia (no és una captura oficial). Podeu substituir-la per captures reals de la demo d'Acumatica.</figcaption>
+  </figure>
+</section>
+
+<!-- ===================== 2. INFORMACIÓ GENERAL ===================== -->
+<section id="general">
+  <h2><span class="num">2</span>Informació general del sistema</h2>
+
+  <h3>2.1 Desenvolupador i història cronològica</h3>
+  <p>Acumatica és desenvolupat i comercialitzat per <strong>Acumatica, Inc.</strong>, una empresa nord-americana amb seu a <strong>Bellevue (Washington, EUA)</strong> (algunes fonts antigues la situen a Kirkland, a la mateixa àrea metropolitana de Seattle). Té oficines a Amèrica del Nord, Europa i Àsia, i comercialitza el producte a través d'una xarxa de partners (VAR) i desenvolupadors independents (ISV).</p>
+
+  <figure>
+    <svg viewBox="0 0 900 230" role="img" aria-label="Cronologia d'Acumatica">
+      <line x1="40" y1="110" x2="860" y2="110" stroke="#0b3d91" stroke-width="5" stroke-linecap="round"/>
+      <g font-family="Segoe UI,Arial" text-anchor="middle">
+        <circle cx="90" cy="110" r="11" fill="#00a3a1"/><text x="90" y="85" font-size="16" font-weight="700" fill="#072a66">2008</text><text x="90" y="145" font-size="12" fill="#1f2933">Primera versió</text><text x="90" y="161" font-size="12" fill="#1f2933">d'Acumatica ERP</text>
+        <circle cx="260" cy="110" r="11" fill="#00a3a1"/><text x="260" y="85" font-size="16" font-weight="700" fill="#072a66">2009</text><text x="260" y="145" font-size="12" fill="#1f2933">Versions On-Premise</text><text x="260" y="161" font-size="12" fill="#1f2933">i SaaS</text>
+        <circle cx="430" cy="110" r="11" fill="#00a3a1"/><text x="430" y="85" font-size="16" font-weight="700" fill="#072a66">2014</text><text x="430" y="145" font-size="12" fill="#1f2933">Jon Roskill, CEO;</text><text x="430" y="161" font-size="12" fill="#1f2933">plataforma xRP</text>
+        <circle cx="600" cy="110" r="11" fill="#00a3a1"/><text x="600" y="85" font-size="16" font-weight="700" fill="#072a66">2019</text><text x="600" y="145" font-size="12" fill="#1f2933">Inversió del</text><text x="600" y="161" font-size="12" fill="#1f2933">fons EQT</text>
+        <circle cx="730" cy="110" r="11" fill="#00a3a1"/><text x="730" y="85" font-size="16" font-weight="700" fill="#072a66">2025</text><text x="730" y="145" font-size="12" fill="#1f2933">Adquirida per</text><text x="730" y="161" font-size="12" fill="#1f2933">Vista Equity Partners</text>
+        <circle cx="845" cy="110" r="11" fill="#f28c28"/><text x="835" y="85" font-size="16" font-weight="700" fill="#072a66">2026</text><text x="835" y="145" font-size="12" fill="#1f2933">Versió 2026 R1</text><text x="835" y="161" font-size="12" fill="#1f2933">(març)</text>
+      </g>
+    </svg>
+    <figcaption>Cronologia resumida d'Acumatica (elaboració pròpia a partir de les fonts de la bibliografia).</figcaption>
+  </figure>
+
+  <ul class="timeline">
+    <li><strong>2008:</strong> es presenta el producte Acumatica ERP, una de les primeres suites de gestió empresarial pensades per al núvol i accessibles des del navegador.</li>
+    <li><strong>2009:</strong> apareixen les modalitats <em>on-premise</em> i <em>SaaS</em>. Acumatica va ser també un dels primers ERP comercials disponibles a Microsoft Azure.</li>
+    <li><strong>2014:</strong> Jon Roskill (exvicepresident de Microsoft) esdevé CEO i es llança la plataforma <strong>xRP</strong>, que permet construir aplicacions de negoci sobre el mateix framework.</li>
+    <li><strong>2017-2021:</strong> premis com <em>PC Magazine Editors' Choice</em> (millor programari ERP, 2017), <em>CODiE Award</em> a millor ERP al núvol (2018) i a millor ERP (2021). El 2021 també apareix al quadrant de Gartner de Cloud ERP.</li>
+    <li><strong>2019:</strong> el fons d'inversió <strong>EQT</strong> hi fa una inversió que impulsa el creixement internacional.</li>
+    <li><strong>29 de maig de 2025:</strong> s'anuncia l'adquisició d'Acumatica per part de <strong>Vista Equity Partners</strong>, venuda per EQT VII (tancament previst pel tercer trimestre de 2025). Els mitjans xifren l'operació en uns 2.000 M$ incloent-hi el deute.</li>
+    <li><strong>Març de 2026:</strong> llançament de la versió <strong>2026 R1</strong>, amb millores de IA, serveis professionals, construcció i cadena de subministrament.</li>
+  </ul>
+
+  <h3>2.2 Dades de versions</h3>
+  <div class="taula-wrap">
+  <table>
+    <thead><tr><th>Dada</th><th>Valor</th></tr></thead>
+    <tbody>
+      <tr><td>Data de la primera versió</td><td>2008 (Acumatica ERP); versions on-premise i SaaS el 2009</td></tr>
+      <tr><td>Versió estable més recent</td><td><strong>Acumatica 2026 R1</strong> (disponibilitat general, març de 2026). Consulteu <a href="https://www.acumatica.com" target="_blank" rel="noopener">acumatica.com</a> per saber si ja s'ha publicat la 2026 R2.</td></tr>
+      <tr><td>Cicle de llançaments</td><td>Dues versions majors l'any: <strong>R1</strong> (primavera) i <strong>R2</strong> (tardor). Cada versió es dona de baixa passat un temps (p. ex. la 2024 R1 es va retirar el 30/11/2025).</td></tr>
+      <tr><td>Nomenclatura</td><td>Versions numerades (1 a 6) fins al 2017; des de la 2017 R2, per any i versió (2018 R1, 2019 R2... 2026 R1).</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>2.3 Llenguatges de programació</h3>
+  <ul class="check">
+    <li><strong>C#</strong> sobre <strong>.NET</strong> i <strong>ASP.NET</strong>: llenguatge principal de la plataforma i de les personalitzacions.</li>
+    <li><strong>SQL / T-SQL</strong>: accés a dades i scripts de personalització.</li>
+    <li><strong>HTML, CSS i JavaScript</strong>: interfície web i personalitzacions del client.</li>
+    <li><strong>BQL (Business Query Language)</strong>: llenguatge propi per escriure consultes que el framework tradueix a SQL.</li>
+  </ul>
+
+  <h3>2.4 Plataformes compatibles</h3>
+  <div class="grid g3">
+    <div class="card"><h4>Servidor</h4><p><strong>Windows Server</strong> (64 bits) amb <strong>IIS</strong>. Per a producció cal un sistema operatiu de servidor; Windows 10/11 només per a proves. No hi ha servidor oficial per a Linux o macOS.</p></div>
+    <div class="card"><h4>Client</h4><p>Qualsevol sistema amb un navegador modern: <strong>Windows, macOS, Linux</strong>, Chrome, Edge, Firefox i Safari.</p></div>
+    <div class="card"><h4>Mòbil</h4><p>Aplicació mòbil per a <strong>iOS i Android</strong>, molt utilitzada en servei de camp, despeses i aprovacions.</p></div>
+  </div>
+
+  <h3>2.5 Arquitectura del programari</h3>
+  <p>Acumatica utilitza una <strong>arquitectura web multicapa client-servidor</strong>. El navegador (o l'app mòbil) es comunica amb un servidor web IIS que executa l'aplicació ASP.NET; aquesta aplicació es basa en el <strong>Acumatica Framework (xRP)</strong>, que organitza el codi en classes d'accés a dades (<strong>DAC</strong>) i controladors de lògica de negoci (<strong>BLC o <em>Graph</em></strong>), i es comunica amb la base de dades relacional. A més, exposa una <strong>API REST</strong> i SOAP per a integracions.</p>
+
+  <figure>
+    <svg viewBox="0 0 900 360" role="img" aria-label="Diagrama d'arquitectura d'Acumatica">
+      <defs>
+        <marker id="fletxa" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0b3d91"/></marker>
+      </defs>
+      <g font-family="Segoe UI,Arial" text-anchor="middle">
+        <!-- Clients -->
+        <rect x="20" y="30" width="170" height="300" rx="14" fill="#e8f0fe" stroke="#0b3d91"/>
+        <text x="105" y="60" font-size="15" font-weight="700" fill="#072a66">CLIENTS</text>
+        <rect x="40" y="80" width="130" height="50" rx="8" fill="#fff" stroke="#9aa7b8"/><text x="105" y="110" font-size="13">Navegador web</text>
+        <rect x="40" y="150" width="130" height="50" rx="8" fill="#fff" stroke="#9aa7b8"/><text x="105" y="180" font-size="13">App mòbil</text>
+        <rect x="40" y="220" width="130" height="50" rx="8" fill="#fff" stroke="#9aa7b8"/><text x="105" y="244" font-size="13">Aplicacions</text><text x="105" y="260" font-size="13">externes (API)</text>
+
+        <!-- Servidor -->
+        <rect x="260" y="30" width="390" height="300" rx="14" fill="#e0f7f6" stroke="#00a3a1"/>
+        <text x="455" y="60" font-size="15" font-weight="700" fill="#072a66">SERVIDOR WEB (IIS + ASP.NET)</text>
+        <rect x="285" y="80" width="340" height="50" rx="8" fill="#fff" stroke="#9aa7b8"/><text x="455" y="110" font-size="13">Capa de presentació · pàgines ASPX / interfície</text>
+        <rect x="285" y="145" width="340" height="50" rx="8" fill="#fff" stroke="#9aa7b8"/><text x="455" y="175" font-size="13">Lògica de negoci · BLC / Graphs (C#)</text>
+        <rect x="285" y="210" width="340" height="50" rx="8" fill="#fff" stroke="#9aa7b8"/><text x="455" y="240" font-size="13">Accés a dades · DAC + BQL</text>
+        <rect x="285" y="275" width="340" height="40" rx="8" fill="#fff4e0" stroke="#f28c28"/><text x="455" y="300" font-size="13">Motor de personalització i fluxos de treball</text>
+
+        <!-- BD -->
+        <rect x="720" y="90" width="160" height="180" rx="14" fill="#fff4e0" stroke="#f28c28"/>
+        <text x="800" y="120" font-size="15" font-weight="700" fill="#072a66">BASE DE DADES</text>
+        <ellipse cx="800" cy="170" rx="45" ry="14" fill="#f28c28"/>
+        <rect x="755" y="170" width="90" height="50" fill="#f28c28"/>
+        <ellipse cx="800" cy="220" rx="45" ry="14" fill="#d97706"/>
+        <text x="800" y="250" font-size="13">SQL Server / MySQL</text>
+      </g>
+      <line x1="190" y1="180" x2="258" y2="180" stroke="#0b3d91" stroke-width="3" marker-end="url(#fletxa)"/>
+      <line x1="650" y1="180" x2="718" y2="180" stroke="#0b3d91" stroke-width="3" marker-end="url(#fletxa)"/>
+      <text x="224" y="170" font-family="Segoe UI,Arial" font-size="11" text-anchor="middle" fill="#0b3d91">HTTPS</text>
+      <text x="684" y="170" font-family="Segoe UI,Arial" font-size="11" text-anchor="middle" fill="#0b3d91">SQL</text>
+    </svg>
+    <figcaption>Arquitectura simplificada d'Acumatica (elaboració pròpia a partir de la documentació tècnica de la plataforma xRP).</figcaption>
+  </figure>
+
+  <h3>2.6 Altres dades rellevants</h3>
+  <ul class="check">
+    <li><strong>Multiempresa, multidivisa i multientitat</strong>: gestió de diverses societats i monedes dins la mateixa instància.</li>
+    <li><strong>Multitenant</strong> a la versió al núvol.</li>
+    <li><strong>Marketplace</strong> amb aplicacions de tercers (uns 300 ISV segons fonts externes).</li>
+    <li><strong>Edicions per sector</strong>: distribució, fabricació, construcció, comerç minorista, serveis professionals, servei de camp...</li>
+    <li><strong>Propietat actual:</strong> Vista Equity Partners (des del 2025).</li>
+  </ul>
+</section>
+
+<!-- ===================== 3. LLICÈNCIES I PREUS ===================== -->
+<section id="llicencies">
+  <h2><span class="num">3</span>Tipus de llicències i preus</h2>
+
+  <h3>3.1 Tipus de llicència</h3>
+  <p>Acumatica és programari <strong>comercial i propietari</strong> (no és programari lliure ni gratuït). Ofereix una versió de prova i entorns de demostració, però no una edició gratuïta. La seva característica diferencial és el <strong>llicenciament per consum de recursos</strong>: <strong>no es cobra per usuari</strong>, de manera que es poden afegir usuaris il·limitats (empleats, clients, proveïdors) sense cost addicional per llicència.</p>
+
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="Comparació conceptual del cost per usuari i per consum">
+      <rect width="720" height="320" rx="12" fill="#f6f8fb" stroke="#d9e1ec"/>
+      <g font-family="Segoe UI,Arial">
+        <text x="360" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#072a66">Cost segons el nombre d'usuaris (esquema conceptual)</text>
+        <line x1="70" y1="270" x2="680" y2="270" stroke="#5f6b7a" stroke-width="2"/>
+        <line x1="70" y1="50" x2="70" y2="270" stroke="#5f6b7a" stroke-width="2"/>
+        <text x="375" y="305" text-anchor="middle" font-size="13" fill="#5f6b7a">Nombre d'usuaris →</text>
+        <text x="20" y="160" font-size="13" fill="#5f6b7a" transform="rotate(-90 20 160)" text-anchor="middle">Cost →</text>
+        <!-- per usuari -->
+        <polyline points="70,250 200,215 330,180 460,145 590,110 670,88" fill="none" stroke="#c5221f" stroke-width="4"/>
+        <!-- consum -->
+        <polyline points="70,230 200,225 330,215 460,205 590,195 670,190" fill="none" stroke="#1e8e3e" stroke-width="4"/>
+        <rect x="430" y="55" width="12" height="12" fill="#c5221f"/><text x="448" y="66" font-size="13">Model per usuari (seat-based)</text>
+        <rect x="430" y="78" width="12" height="12" fill="#1e8e3e"/><text x="448" y="89" font-size="13">Model per consum (Acumatica)</text>
+      </g>
+    </svg>
+    <figcaption>Esquema il·lustratiu del concepte; no representa preus reals. El cost real depèn del volum de transaccions i de les aplicacions contractades.</figcaption>
+  </figure>
+
+  <h3>3.2 Modalitats de distribució</h3>
+  <div class="taula-wrap">
+  <table>
+    <thead><tr><th>Modalitat</th><th>Descripció</th></tr></thead>
+    <tbody>
+      <tr><td><strong>SaaS (Acumatica Cloud)</strong></td><td>Hosting gestionat per Acumatica als seus servidors al núvol (a Amazon Web Services). Segons fonts de partners, és la modalitat de l'ordre del 85 % de les implantacions.</td></tr>
+      <tr><td><strong>Private Cloud / IaaS</strong></td><td>El client (o un partner) allotja la instància en un núvol propi (Azure, AWS...).</td></tr>
+      <tr><td><strong>On-Premise</strong></td><td>Instal·lació als servidors del client; llicència de subscripció o, històricament, de llicència perpètua.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>3.3 Modalitats de subscripció i preus</h3>
+  <ul class="check">
+    <li><strong>Subscripció anual</strong> basada en tres factors: <em>aplicacions/edicions</em> contractades, <em>nivell de consum de recursos</em> (volum de transaccions, emmagatzematge i potència de càlcul) i <em>modalitat de desplegament</em>.</li>
+    <li><strong>Venda indirecta:</strong> els preus els proporcionen els partners (VAR) mitjançant pressupost; Acumatica <strong>no publica preus</strong> al seu web.</li>
+    <li><strong>Evolució del model:</strong> abans d'abril de 2018 es llicenciava per nuclis lògics de CPU; després va passar a nivells de transaccions i posteriorment es va simplificar el model.</li>
+    <li><strong>Ordre de magnitud (orientatiu, font de tercers):</strong> d'uns 10.000 a 80.000 USD/any de llicència segons l'empresa, o d'uns 1.500 a 3.000 USD/mes. A això cal afegir-hi el cost d'implantació, que pot ser molt superior a la llicència.</li>
+  </ul>
+  <div class="nota"><strong>Nota:</strong> els imports són estimacions de portals externs i partners, no preus oficials. Per al treball cal indicar-ho així i, si es pot, demanar un pressupost real a un partner.</div>
+</section>
+
+<!-- ===================== 4. SGBD ===================== -->
+<section id="sgbd">
+  <h2><span class="num">4</span>Sistemes gestors de bases de dades associats</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Microsoft SQL Server</h3>
+      <p>És el SGBD principal i el més utilitzat amb Acumatica (també a la versió SaaS). Base de dades <strong>relacional</strong>, amb llenguatge T-SQL. Permet la cerca semàntica i full-text si s'instal·la aquesta característica.</p>
+    </div>
+    <div class="card">
+      <h3>MySQL Community Edition</h3>
+      <p>Alternativa de codi obert també <strong>relacional</strong>, compatible per a instal·lacions on-premise. Redueix el cost de llicències de base de dades.</p>
+    </div>
+  </div>
+
+  <h3>Altres informacions rellevants</h3>
+  <ul class="check">
+    <li><strong>Tipus de SGBD:</strong> relacional (SQL). No s'utilitza una base de dades documental com a magatzem principal.</li>
+    <li><strong>Accés a les dades:</strong> el framework mapeja cada taula a una classe <strong>DAC</strong>, i les consultes s'escriuen en <strong>BQL</strong>, que es tradueix a SQL pel motor.</li>
+    <li><strong>Integració i BI:</strong> API REST/SOAP, OData per a eines com Excel o Power BI i connectors ADO.NET de tercers.</li>
+    <li><strong>Requisits de servidor (on-premise):</strong> Windows Server de 64 bits, IIS, i versions recents de SQL Server (consulteu la documentació de cada release, ja que canvien cada any).</li>
+  </ul>
+</section>
+
+<!-- ===================== 5. INSTAL·LACIÓ ===================== -->
+<section id="instalacio">
+  <h2><span class="num">5</span>Instal·lació i accés al sistema</h2>
+
+  <h3>5.1 Tipus d'instal·ladors</h3>
+  <div class="grid g3">
+    <div class="card"><h4>Acumatica ERP Installer</h4><p>Instal·lador per a Windows que desplega el servidor web i l'<em>Acumatica ERP Configuration Wizard</em>.</p></div>
+    <div class="card"><h4>Configuration Wizard</h4><p>Assistent per crear i configurar instàncies: connexió al SGBD, creació de la base de dades i dades de demostració.</p></div>
+    <div class="card"><h4>Acumatica Framework + plantilles</h4><p>Per a desenvolupadors: plantilles de Visual Studio per crear aplicacions sobre el framework.</p></div>
+  </div>
+
+  <h3>5.2 Procés d'instal·lació (on-premise)</h3>
+  <ol>
+    <li>Comprovar requisits: Windows Server de 64 bits (o Windows 10/11 per a proves), 16 GB de RAM recomanats i IIS activat amb les funcions necessàries.</li>
+    <li>Instal·lar <strong>SQL Server</strong> (o MySQL) i configurar permisos i l'accés per xarxa.</li>
+    <li>Descarregar i executar l'<strong>Acumatica ERP Installer</strong> des del portal de la comunitat.</li>
+    <li>Executar l'<strong>assistent de configuració</strong>: triar el servidor de BD, el directori, el nom de la instància i les dades de demostració.</li>
+    <li>Activar <strong>HTTPS</strong> amb un certificat (obligatori per a funcions com SSO i exportació a Excel).</li>
+    <li>Accedir pel navegador a la URL de la instància i iniciar sessió amb l'usuari administrador.</li>
+  </ol>
+
+  <h3>5.3 Procés de contractació (SaaS)</h3>
+  <ol>
+    <li>Contactar amb un <strong>partner autoritzat</strong> (VAR) o demanar una demostració a Acumatica.</li>
+    <li>Anàlisi de necessitats: edicions, aplicacions i volum de transaccions.</li>
+    <li>Pressupost de subscripció i signatura del contracte.</li>
+    <li>Acumatica proporciona l'entorn al núvol i el partner fa la implantació i la formació.</li>
+  </ol>
+
+  <h3>5.4 Modalitats d'accés</h3>
+  <div class="grid g3">
+    <div class="card"><h4>🌐 Web</h4><p>Accés principal des del navegador, sense instal·lar res al client.</p></div>
+    <div class="card"><h4>📱 App mòbil</h4><p>Aplicació per a iOS i Android per a aprovacions, despeses, servei de camp i consulta de dades.</p></div>
+    <div class="card"><h4>🔌 API</h4><p>Accés programàtic via REST/SOAP/OData per a integracions amb altres programes.</p></div>
+  </div>
+  <p>No existeix un «client d'escriptori» tradicional: tot el sistema s'executa en un navegador.</p>
+</section>
+
+<!-- ===================== 6. MÒDULS ===================== -->
+<section id="moduls">
+  <h2><span class="num">6</span>Mòduls i funcionalitats</h2>
+
+  <figure>
+    <svg viewBox="0 0 800 380" role="img" aria-label="Mapa de mòduls d'Acumatica">
+      <g font-family="Segoe UI,Arial" text-anchor="middle">
+        <circle cx="400" cy="190" r="70" fill="#0b3d91"/>
+        <text x="400" y="185" font-size="16" font-weight="700" fill="#fff">Acumatica</text>
+        <text x="400" y="206" font-size="13" fill="#dbe7ff">Plataforma xRP</text>
+        <g stroke="#9aa7b8" stroke-width="2">
+          <line x1="400" y1="120" x2="400" y2="75"/><line x1="460" y1="150" x2="560" y2="90"/>
+          <line x1="470" y1="190" x2="590" y2="190"/><line x1="460" y1="230" x2="560" y2="295"/>
+          <line x1="400" y1="260" x2="400" y2="305"/><line x1="340" y1="230" x2="240" y2="295"/>
+          <line x1="330" y1="190" x2="210" y2="190"/><line x1="340" y1="150" x2="240" y2="90"/>
+        </g>
+        <rect x="320" y="30" width="160" height="45" rx="10" fill="#00a3a1"/><text x="400" y="58" font-size="14" fill="#fff" font-weight="700">Finances</text>
+        <rect x="480" y="55" width="170" height="45" rx="10" fill="#1e8e3e"/><text x="565" y="83" font-size="14" fill="#fff" font-weight="700">Distribució</text>
+        <rect x="590" y="168" width="170" height="45" rx="10" fill="#f28c28"/><text x="675" y="196" font-size="14" fill="#fff" font-weight="700">Fabricació</text>
+        <rect x="490" y="275" width="170" height="45" rx="10" fill="#7b4fd0"/><text x="575" y="303" font-size="14" fill="#fff" font-weight="700">Construcció</text>
+        <rect x="320" y="305" width="160" height="45" rx="10" fill="#c5221f"/><text x="400" y="333" font-size="14" fill="#fff" font-weight="700">CRM</text>
+        <rect x="140" y="275" width="170" height="45" rx="10" fill="#0e7490"/><text x="225" y="303" font-size="14" fill="#fff" font-weight="700">Comerç / Retail</text>
+        <rect x="40" y="168" width="170" height="45" rx="10" fill="#b45309"/><text x="125" y="196" font-size="14" fill="#fff" font-weight="700">Servei de camp</text>
+        <rect x="150" y="55" width="170" height="45" rx="10" fill="#475569"/><text x="235" y="83" font-size="14" fill="#fff" font-weight="700">Projectes / Serveis</text>
+      </g>
+    </svg>
+    <figcaption>Mapa de mòduls i edicions d'Acumatica (elaboració pròpia).</figcaption>
+  </figure>
+
+  <h3>6.1 Els tres mòduls més importants</h3>
+  <div class="grid g3">
+    <div class="card">
+      <h3>💶 Gestió financera</h3>
+      <p>És el nucli del sistema. Inclou llibre major, comptes a pagar i a cobrar, tresoreria, conciliació bancària, actius fixos, pressupostos, multidivisa i consolidació multiempresa. Totes les operacions dels altres mòduls generen assentaments comptables automàtics.</p>
+    </div>
+    <div class="card">
+      <h3>📦 Gestió de la distribució</h3>
+      <p>Cobreix compres, vendes, inventari multimagatzem, ordres de venda i de compra, lots i números de sèrie, preus i descomptes, i enviaments. Permet controlar l'estoc en temps real des de qualsevol dispositiu.</p>
+    </div>
+    <div class="card">
+      <h3>🤝 CRM</h3>
+      <p>Gestiona clients potencials, oportunitats, pressupostos, campanyes de màrqueting, casos de suport i el flux d'activitats. Comparteix la mateixa base de dades que l'ERP, de manera que el comercial veu el crèdit, l'estoc i les factures del client.</p>
+    </div>
+  </div>
+  <p>Altres aplicacions rellevants: <strong>fabricació</strong>, <strong>comptabilitat de projectes</strong>, <strong>construcció</strong>, <strong>comerç electrònic i retail</strong>, <strong>servei de camp</strong>, <strong>nòmines</strong>, <strong>despeses</strong> i <strong>informes i tauler (dashboards)</strong>. La versió 2026 R1 ha incorporat millores d'IA i flux de treball sense codi.</p>
+
+  <h3>6.2 Capacitat de crear nous mòduls</h3>
+  <p>Acumatica està pensat per ser ampliat. Les extensions es publiquen com a <strong>projectes de personalització</strong> (<em>Customization Projects</em>), que es poden aplicar o revertir sense modificar el codi original: el framework crea fitxers C# addicionals per estendre les classes.</p>
+
+  <h4>Llenguatges i tecnologies</h4>
+  <ul class="check">
+    <li><strong>C# / .NET</strong> per a la lògica de negoci i les extensions.</li>
+    <li><strong>ASPX, HTML i JavaScript</strong> per a l'aspecte de les pantalles.</li>
+    <li><strong>SQL</strong> per a esquemes i scripts de base de dades.</li>
+    <li><strong>Eines sense codi / amb poc codi:</strong> editor de pantalles, consultes genèriques (<em>Generic Inquiries</em>), dissenyador d'informes i motor de fluxos de treball.</li>
+    <li><strong>APIs REST/SOAP</strong> per integrar sistemes externs.</li>
+  </ul>
+
+  <h4>Eines de desenvolupament (IDE)</h4>
+  <ul class="check">
+    <li><strong>Microsoft Visual Studio</strong> amb les plantilles d'Acumatica.</li>
+    <li><strong>Acuminator</strong>: extensió de Visual Studio per a analitzar i millorar el codi d'Acumatica.</li>
+    <li><strong>Customization Project Editor</strong> (dins d'Acumatica) i <strong>Git</strong> per al control de versions.</li>
+    <li>Cal tenir també IIS i SQL Server per a l'entorn local de desenvolupament.</li>
+  </ul>
+
+  <h4>Exemples de codi</h4>
+  <p><strong>1) Extensió d'un DAC</strong>: afegir un camp personalitzat a la comanda de venda.</p>
+<pre><code><span class="k">using</span> PX.Data;
+<span class="k">using</span> PX.Objects.SO;
+
+<span class="k">namespace</span> MiProjecte
+{
+    <span class="c">// Afegeix el camp "Nota interna" a la comanda de venda</span>
+    <span class="k">public sealed class</span> SOOrderExt : PXCacheExtension&lt;SOOrder&gt;
+    {
+        <span class="k">#region</span> UsrNotaInterna
+        [PXDBString(255)]
+        [PXUIField(DisplayName = <span class="s">"Nota interna"</span>)]
+        <span class="k">public virtual string</span> UsrNotaInterna { <span class="k">get</span>; <span class="k">set</span>; }
+        <span class="k">public abstract class</span> usrNotaInterna : PX.Data.BQL.BqlString.Field&lt;usrNotaInterna&gt; { }
+        <span class="k">#endregion</span>
+    }
+}</code></pre>
+
+  <p><strong>2) Extensió d'un Graph (BLC)</strong>: llançar una regla quan canvia un camp.</p>
+<pre><code><span class="k">using</span> PX.Data;
+<span class="k">using</span> PX.Objects.SO;
+
+<span class="k">namespace</span> MiProjecte
+{
+    <span class="k">public class</span> SOOrderEntryExt : PXGraphExtension&lt;SOOrderEntry&gt;
+    {
+        <span class="c">// S'executa cada vegada que canvia el client de la comanda</span>
+        <span class="k">protected void</span> _(Events.FieldUpdated&lt;SOOrder.customerID&gt; e)
+        {
+            <span class="k">var</span> order = e.Row <span class="k">as</span> SOOrder;
+            <span class="k">if</span> (order == <span class="k">null</span>) <span class="k">return</span>;
+            e.Cache.SetValueExt&lt;SOOrderExt.usrNotaInterna&gt;(order, <span class="s">"Revisar condicions de pagament"</span>);
+        }
+    }
+}</code></pre>
+  <div class="nota">Els exemples són il·lustratius i estan basats en la documentació oficial del Customization Platform. Cal provar-los en un entorn de demostració abans de presentar-los, perquè els noms de camps i classes poden variar segons la versió.</div>
+</section>
+
+<!-- ===================== 7. COMPETIDORS ===================== -->
+<section id="competidors">
+  <h2><span class="num">7</span>Comparativa amb els principals competidors</h2>
+  <p>Hem triat dos competidors representatius: <strong>Oracle NetSuite</strong> (ERP al núvol amb molta implantació) i <strong>Odoo</strong> (ERP modular amb una edició de codi obert).</p>
+
+  <div class="taula-wrap">
+  <table>
+    <thead>
+      <tr><th>Criteri</th><th>Acumatica</th><th>Oracle NetSuite</th><th>Odoo</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Propietari</strong></td><td>Vista Equity Partners (des del 2025)</td><td>Oracle</td><td>Odoo S.A. (Bèlgica)</td></tr>
+      <tr><td><strong>Tipus de llicència</strong></td><td>Comercial, propietària</td><td>Comercial, propietària</td><td>Community: lliure (LGPL); Enterprise: comercial</td></tr>
+      <tr><td><strong>Model de preus</strong></td><td>Per consum de recursos; usuaris il·limitats; pressupost via partner</td><td>Per usuari + mòduls; pressupost personalitzat</td><td>Per usuari i mes (Enterprise, des d'uns 24,90 $); Community gratuït</td></tr>
+      <tr><td><strong>Desplegament</strong></td><td>SaaS, núvol privat i on-premise</td><td>Només al núvol (SaaS)</td><td>Odoo Online, Odoo.sh, on-premise</td></tr>
+      <tr><td><strong>Llenguatge de personalització</strong></td><td>C# / .NET (Acumatica Framework)</td><td>SuiteScript (JavaScript)</td><td>Python, XML i OWL (JavaScript)</td></tr>
+      <tr><td><strong>SGBD</strong></td><td>SQL Server / MySQL</td><td>Propi (gestionat per Oracle)</td><td>PostgreSQL</td></tr>
+      <tr><td><strong>Mòduls i extensions</strong></td><td>~12 edicions i aplicacions + marketplace (~300 ISV)</td><td>Suite àmplia + centenars de SuiteApps</td><td>Més de 50 apps oficials + milers d'apps de tercers</td></tr>
+      <tr><td><strong>Mida d'empresa ideal</strong></td><td>Pimes i mitjanes empreses, moltes amb molts usuaris</td><td>Mitjanes i grans empreses</td><td>Petites i mitjanes empreses i startups</td></tr>
+      <tr><td><strong>Punt fort</strong></td><td>Usuaris il·limitats, flexibilitat de desplegament, edicions per sector</td><td>Ecosistema madur i molts desenvolupadors</td><td>Preu, cobertura funcional i comunitat</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="grid g2">
+    <div class="card"><h4>Acumatica vs NetSuite</h4><p>La diferència clau és com es paga: NetSuite cobra per usuari, la qual cosa fa pujar el cost a mesura que creix la plantilla, mentre que Acumatica cobra per consum. A més, NetSuite només funciona al núvol d'Oracle i Acumatica permet triar on s'allotja.</p></div>
+    <div class="card"><h4>Acumatica vs Odoo</h4><p>Odoo és més barat per a empreses amb pocs usuaris i té una edició gratuïta, i cobreix molts àmbits (web, comerç electrònic, màrqueting). Acumatica sol ser més profund en finances, fabricació i construcció, i resulta competitiu quan hi ha molts usuaris.</p></div>
+  </div>
+
+  <div class="nota"><strong>Nota:</strong> les dades de preus són aproximades i provenen de portals comparatius de tercers, de manera que poden canviar. Indiqueu a la presentació que cal demanar una oferta real.</div>
+</section>
+
+<!-- ===================== 8. OFERTES DE FEINA ===================== -->
+<section id="feina">
+  <h2><span class="num">8</span>Ofertes de feina que demanen coneixements d'Acumatica</h2>
+  <p>El perfil més buscat és el de <strong>desenvolupador C# / .NET amb experiència en el framework d'Acumatica</strong>, així com consultors funcionals i implantadors. Aquestes són algunes ofertes trobades durant la investigació (les ofertes poden caducar):</p>
+
+  <div class="grid g2">
+    <div class="feina">
+      <h4>Principal Software Engineer – C#, .NET</h4>
+      <div class="meta">Acumatica · Colombo (Sri Lanka) · Presencial · Nivell sènior</div>
+      <p>Equip de R&D: desenvolupament d'aplicacions ERP i CRM amb .NET, C# i MS SQL Server, i suport als desenvolupadors de la xarxa Acumatica.</p>
+      <a class="btn" href="https://www.smartrecruiters.com/Acumatica/744000070794379" target="_blank" rel="noopener">Veure oferta</a>
+    </div>
+    <div class="feina">
+      <h4>Senior Software Developer (C# / .NET)</h4>
+      <div class="meta">Acumatica · Belgrad (Sèrbia) · Jornada completa</div>
+      <p>Disseny i desenvolupament d'aplicacions de negoci i personalitzacions, i suport al marc xRP.</p>
+      <a class="btn" href="https://smartrecruiters.com/Acumatica/744000038323869" target="_blank" rel="noopener">Veure oferta</a>
+    </div>
+    <div class="feina">
+      <h4>Lead Software Developer (C#/.NET)</h4>
+      <div class="meta">Acumatica · Montréal (Quebec) / Ottawa · Equip de nòmines</div>
+      <p>Participació en el disseny de la plataforma xRP: API, motor de permisos, tasques en segon pla, multitenència i personalització sense codi.</p>
+      <a class="btn" href="https://cybercoders.dejobs.org/montréal-qc/lead-software-developer-cnet/DEDFC673CC434290A32576684027B453/job/" target="_blank" rel="noopener">Veure oferta</a>
+    </div>
+    <div class="feina">
+      <h4>C# Developer – Acumatica ERP</h4>
+      <div class="meta">PostcardMania · Clearwater (Florida, EUA) · Salari: 75.000–125.000 $/any</div>
+      <p>Personalitzar i ampliar mòduls d'Acumatica, integracions i manteniment. Es demana C# .NET i experiència amb Acumatica.</p>
+      <a class="btn" href="https://www.postcardmania.com/careers/c-developer-xc28b0e05" target="_blank" rel="noopener">Veure oferta</a>
+    </div>
+    <div class="feina">
+      <h4>Acumatica Developer</h4>
+      <div class="meta">Atticus Advisory Solutions · Treball 100 % remot</div>
+      <p>Solucions personalitzades amb Acumatica Framework i C#, integracions per API; es valoren certificacions d'Acumatica (Developer, Functional Consultant).</p>
+      <a class="btn" href="https://dynamic.jobgether.com/offer/67532015a0cd71a4a7832dfc-acumatica-developer" target="_blank" rel="noopener">Veure oferta</a>
+    </div>
+    <div class="feina">
+      <h4>Acumatica Developer</h4>
+      <div class="meta">Djinni · Remot</div>
+      <p>Es demana C#, .NET Core i MS SQL, i coneixement del cicle d'esdeveniments d'Acumatica; optimitzar consultes i fer integracions.</p>
+      <a class="btn" href="https://djinni.co/jobs/610076-acumatica-developer" target="_blank" rel="noopener">Veure oferta</a>
+    </div>
+  </div>
+
+  <h3>Competències més demanades</h3>
+  <div class="taula-wrap">
+  <table>
+    <thead><tr><th>Competència</th><th>Presència a les ofertes</th></tr></thead>
+    <tbody>
+      <tr><td>C# i .NET (Framework / Core)</td><td>En totes les ofertes de desenvolupament</td></tr>
+      <tr><td>SQL Server i optimització de consultes</td><td>Molt habitual</td></tr>
+      <tr><td>Acumatica Framework / xRP, DAC, Graphs i BQL</td><td>Habitual per als perfils sèniors</td></tr>
+      <tr><td>APIs i integracions (REST)</td><td>Habitual</td></tr>
+      <tr><td>Certificacions d'Acumatica</td><td>Es valoren</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="info">Un estudiant de DAM que conegui C#, SQL i desenvolupament web té una bona base per entrar en l'ecosistema d'Acumatica.</div>
+</section>
+
+<!-- ===================== 9. AVANTATGES I INCONVENIENTS ===================== -->
+<section id="avantatges">
+  <h2><span class="num">9</span>Avantatges i inconvenients del sistema</h2>
+  <div class="taula-wrap">
+  <table>
+    <thead>
+      <tr><th class="fort">Punts forts</th><th class="feble">Punts dèbils</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="fort">Usuaris il·limitats: el cost no creix amb la plantilla</td><td class="feble">No publica preus; cal demanar pressupost a un partner</td></tr>
+      <tr><td class="fort">Flexibilitat de desplegament (SaaS, núvol privat o on-premise)</td><td class="feble">El servidor només funciona sobre Windows Server i IIS</td></tr>
+      <tr><td class="fort">Plataforma oberta i personalitzable amb C# i .NET</td><td class="feble">Menys professionals i partners que NetSuite, Dynamics o Odoo</td></tr>
+      <tr><td class="fort">Edicions per sector (distribució, construcció, fabricació...)</td><td class="feble">El cost total d'implantació pot ser alt</td></tr>
+      <tr><td class="fort">Interfície 100 % web i app mòbil</td><td class="feble">Menys apps de tercers que Odoo o NetSuite</td></tr>
+      <tr><td class="fort">Dues versions l'any amb novetats i IA</td><td class="feble">Les actualitzacions periòdiques poden afectar personalitzacions</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="grid g2">
+    <div class="card"><h4>Conclusió</h4><p>Acumatica és una opció molt sòlida per a pimes i mitjanes empreses que creixen i volen un ERP al núvol amb molts usuaris i possibilitat de personalitzar. L'han d'avaluar sobretot les empreses que necessiten preus transparents o que no tenen entorn Microsoft.</p></div>
+    <div class="card"><h4>Valoració personal</h4><p>[Escriviu aquí la vostra valoració personal i què us ha sorprès més de l'ERP.]</p></div>
+  </div>
+</section>
+
+<!-- ===================== 10. BIBLIOGRAFIA ===================== -->
+<section id="bibliografia">
+  <h2><span class="num">10</span>Bibliografia i fonts</h2>
+  <ol class="bibliografia">
+    <li>Acumatica. Web oficial: <a href="https://www.acumatica.com" target="_blank" rel="noopener">https://www.acumatica.com</a></li>
+    <li>Wikipedia. <em>Acumatica</em>: <a href="https://en.wikipedia.org/wiki/Acumatica" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Acumatica</a></li>
+    <li>Business Wire. <em>Acumatica to be Acquired by Vista Equity Partners</em> (29/05/2025): <a href="https://www.businesswire.com/news/home/20250529481310/en/Acumatica-to-be-Acquired-by-Vista-Equity-Partners" target="_blank" rel="noopener">enllaç</a></li>
+    <li>EQT. <em>EQT to sell Acumatica to Vista Equity Partners</em>: <a href="https://eqtgroup.com/en/news/eqt-to-sell-acumatica-to-vista-equity-partners-following-transformational-growth-journey-2025-05-29" target="_blank" rel="noopener">enllaç</a></li>
+    <li>Business Wire. <em>Acumatica 2026 R1</em> (comunicats de premsa): <a href="https://www.businesswire.com/news/home/20241002202578/en" target="_blank" rel="noopener">enllaç</a></li>
+    <li>Velixo. <em>Acumatica version compatibility</em> (taula de versions retirades): <a href="https://help.velixo.com/doc/main/acumatica/acumatica-velixo-version-compatibility" target="_blank" rel="noopener">enllaç</a></li>
+    <li>SWK Technologies. <em>Understanding Acumatica old &amp; new license model</em>: <a href="https://www.swktech.com/understanding-acumatica-old-new-license-model-2025/" target="_blank" rel="noopener">enllaç</a></li>
+    <li>Stacksync. <em>Acumatica Pricing Guide</em>: <a href="https://www.stacksync.com/blog/acumatica-pricing-guide" target="_blank" rel="noopener">enllaç</a></li>
+    <li>Automation Atlas. <em>Acumatica review 2026</em>: <a href="https://automationatlas.io/tools/acumatica/" target="_blank" rel="noopener">enllaç</a></li>
+    <li>Acumatica. <em>2022 DevCon – xRP Framework Fundamentals</em>: <a href="https://www.acumatica.com/media/2022/06/2022-DevCon-Framework.pdf" target="_blank" rel="noopener">enllaç</a></li>
+    <li>MYOB Acumatica Help. <em>Customization Framework</em>: <a href="https://help.myob.com.au/advanced/Docs/Published/CustomizationPlatform/CG_Platform_Framework.html" target="_blank" rel="noopener">enllaç</a></li>
+    <li>MYOB Acumatica Help. <em>System Requirements</em>: <a href="https://help.myob.com.au/advanced/Docs/Published/UserGuide/INST_Preparing_Installation_System_Requirements.html" target="_blank" rel="noopener">enllaç</a></li>
+    <li>ERP Research. <em>Acumatica vs Odoo</em>: <a href="https://www.erpresearch.com/compare/acumatica-vs-odoo" target="_blank" rel="noopener">enllaç</a></li>
+    <li>ProjectManager. <em>Acumatica vs. NetSuite</em>: <a href="https://www.projectmanager.com/?p=84095" target="_blank" rel="noopener">enllaç</a></li>
+    <li>Ofertes de feina: SmartRecruiters (Acumatica), CyberCoders, PostcardMania, Jobgether i Djinni (enllaços a la secció 8).</li>
+    <li>Eines d'IA: aquest treball s'ha elaborat amb ajuda d'una eina d'intel·ligència artificial (Claude, d'Anthropic) per cercar i organitzar la informació, i després s'ha revisat.</li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <p>Treball de Sistemes de Gestió Empresarial · 2n DAM · RA1 A1 · Acumatica Cloud ERP</p>
+  <p>Acumatica és una marca registrada del seu propietari. Aquest treball té una finalitat exclusivament educativa.</p>
+</footer>
+
+</body>
+</html>

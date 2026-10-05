@@ -1,0 +1,264 @@
+/* ===== Acumatica ERP - Estudi de mercat d'un SGE ===== */
+:root {
+  --blau: #0b3d91;
+  --blau-fosc: #072a66;
+  --blau-clar: #e8f0fe;
+  --accent: #00a3a1;
+  --taronja: #f28c28;
+  --verd: #1e8e3e;
+  --vermell: #c5221f;
+  --text: #1f2933;
+  --gris: #5f6b7a;
+  --fons: #f6f8fb;
+  --blanc: #ffffff;
+  --vora: #d9e1ec;
+  --radi: 12px;
+  --ombra: 0 4px 16px rgba(11, 61, 145, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--fons);
+  line-height: 1.65;
+}
+
+a { color: var(--blau); }
+a:hover { color: var(--accent); }
+
+h1, h2, h3, h4 { line-height: 1.25; color: var(--blau-fosc); }
+
+/* ---------- Navegació ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--blau-fosc);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.nav a {
+  display: block;
+  padding: 14px 12px;
+  color: #dbe7ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.nav a:hover { background: var(--blau); color: #fff; }
+
+/* ---------- Capçalera ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--blau-fosc) 0%, var(--blau) 55%, var(--accent) 130%);
+  color: #fff;
+  padding: 70px 20px 80px;
+  text-align: center;
+}
+.hero .assignatura {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+.hero h1 {
+  color: #fff;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  margin: 10px 0;
+}
+.hero p.sub { font-size: 1.2rem; max-width: 760px; margin: 0 auto 24px; opacity: 0.95; }
+.etiquetes { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.etiqueta {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+.autors { margin-top: 26px; font-size: 0.95rem; opacity: 0.9; }
+
+/* ---------- Estructura ---------- */
+main { max-width: 1150px; margin: 0 auto; padding: 0 20px 60px; }
+
+section {
+  background: var(--blanc);
+  border-radius: var(--radi);
+  box-shadow: var(--ombra);
+  padding: 34px 38px;
+  margin-top: 30px;
+}
+section > h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+section h3 { margin-top: 28px; color: var(--blau); }
+
+.num {
+  display: inline-block;
+  background: var(--blau);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin-right: 8px;
+  font-size: 0.9em;
+}
+
+.grid { display: grid; gap: 18px; }
+.g2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.g3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.g4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+.card {
+  background: var(--fons);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 18px 20px;
+}
+.card h3, .card h4 { margin: 0 0 8px; }
+.card p { margin: 0; }
+
+.dada {
+  text-align: center;
+  background: var(--blau-clar);
+  border-radius: var(--radi);
+  padding: 18px 10px;
+}
+.dada .valor { font-size: 2rem; font-weight: 800; color: var(--blau); display: block; }
+.dada .etq { font-size: 0.9rem; color: var(--gris); }
+
+.nota {
+  background: #fff8e6;
+  border-left: 5px solid var(--taronja);
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.93rem;
+  margin: 18px 0;
+}
+.info {
+  background: var(--blau-clar);
+  border-left: 5px solid var(--blau);
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 18px 0;
+}
+
+figure { margin: 24px 0; text-align: center; }
+figure svg, figure img { max-width: 100%; height: auto; }
+figcaption { font-size: 0.85rem; color: var(--gris); margin-top: 8px; }
+
+/* ---------- Taules ---------- */
+.taula-wrap { overflow-x: auto; margin: 18px 0; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  min-width: 560px;
+}
+th, td { border: 1px solid var(--vora); padding: 10px 12px; text-align: left; vertical-align: top; }
+thead th { background: var(--blau); color: #fff; }
+tbody tr:nth-child(even) { background: var(--fons); }
+td.fort { background: #e6f4ea; }
+td.feble { background: #fce8e6; }
+th.fort { background: var(--verd); color: #fff; }
+th.feble { background: var(--vermell); color: #fff; }
+
+/* ---------- Codi ---------- */
+pre {
+  background: #0f1b33;
+  color: #e6edf7;
+  padding: 18px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+code { font-family: "Consolas", "Fira Code", monospace; }
+p code, li code, td code {
+  background: var(--blau-clar);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+pre .c { color: #7f93b3; }
+pre .k { color: #7cc4ff; }
+pre .s { color: #a5e3a0; }
+
+/* ---------- Cronologia (HTML) ---------- */
+.timeline { list-style: none; padding: 0; margin: 20px 0; border-left: 4px solid var(--accent); }
+.timeline li { position: relative; padding: 0 0 18px 24px; }
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -11px; top: 4px;
+  width: 18px; height: 18px;
+  background: var(--blau);
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.timeline strong { color: var(--blau); }
+
+/* ---------- Ofertes de feina ---------- */
+.feina {
+  border: 1px solid var(--vora);
+  border-left: 5px solid var(--accent);
+  border-radius: var(--radi);
+  padding: 16px 20px;
+  background: var(--fons);
+}
+.feina h4 { margin: 0 0 4px; }
+.feina .meta { font-size: 0.85rem; color: var(--gris); margin-bottom: 8px; }
+
+.btn {
+  display: inline-block;
+  background: var(--blau);
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.btn:hover { background: var(--accent); }
+
+ul.check { list-style: none; padding-left: 0; }
+ul.check li { padding-left: 26px; position: relative; margin-bottom: 6px; }
+ul.check li::before { content: "✔"; position: absolute; left: 0; color: var(--verd); font-weight: 700; }
+ul.cross { list-style: none; padding-left: 0; }
+ul.cross li { padding-left: 26px; position: relative; margin-bottom: 6px; }
+ul.cross li::before { content: "✖"; position: absolute; left: 0; color: var(--vermell); font-weight: 700; }
+
+.bibliografia li { margin-bottom: 8px; word-break: break-word; }
+
+footer {
+  background: var(--blau-fosc);
+  color: #cdd9ee;
+  text-align: center;
+  padding: 26px 16px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  section { padding: 22px 18px; }
+  .nav a { padding: 10px 8px; font-size: 0.8rem; }
+}
+
+@media print {
+  .nav { display: none; }
+  section { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+}
